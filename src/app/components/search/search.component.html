@@ -1,0 +1,26 @@
+<section class="container-fluid search">
+  <form class="row">
+    <div class="col-12 col-sm-6 col-md">
+        <select name="complexity" id="complexity" class="form-control form-control-lg">
+          <option value="" disabled selected>Складність</option>
+          <option *ngFor="let item of complexity" value="{{ item.id }}">{{item.title}}</option>
+        </select>
+    </div>
+    <div class="col-12 сol-sm-6 col-md">
+      <select name="duration" id="duration" class="form-control form-control-lg">
+        <option value="" disabled selected>Тривалість</option>
+        <option *ngFor="let item of duration" value="{{ item.id }}">{{item.title}}</option>
+      </select>
+    </div>
+    <div class="col-12 сol-sm-6 col-md">
+      <select name="duration" id="duration" class="form-control form-control-lg">
+        <option value="" disabled selected>Локалізація (Регіон)</option>
+        <option value="">Карпати</option>
+
+      </select>
+    </div>
+    <div class="col-12 сol-sm-6 col-md">
+      <input type="submit" class="form-control form-control-lg btn btn-success" value="Пошук маршруту">
+    </div>
+  </form>
+</section>

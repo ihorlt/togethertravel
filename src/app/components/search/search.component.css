@@ -1,0 +1,27 @@
+select:invalid {
+    color: gray;
+  }
+  option[value=""][disabled] {
+    display: none;
+  }
+  .form-select{
+    display: block;
+    width: 100%;  
+    height: calc(3.5rem + 2px);    
+    padding: .375rem .75rem;   
+    font-size: 1.5rem;    
+    line-height: 2;
+  }
+  .form-submit{
+    display: block;
+    width: 100%;  
+    height: calc(3.5rem + 2px);    
+    padding: 0.25rem .25rem .75rem;   
+    font-size: 1.5rem;    
+    line-height: 2;
+  }
+  .search{
+    padding:1rem;
+    background-color: blanchedalmond;
+    opacity: .9;
+  }

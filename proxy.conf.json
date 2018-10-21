@@ -1,0 +1,11 @@
+{
+  "/api": {
+    "target": "http://dev-api-recreationassistant.azurewebsites.net/api/",
+    "secure": false,
+    "changeOrigin": true,
+    "pathRewrite": {
+        "^/api": ""
+      },
+    "logLevel": "debug"
+  }
+}
