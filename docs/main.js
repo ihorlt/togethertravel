@@ -510,7 +510,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row justify-content-md-center\">\n  <div class=\"col-10\">\n    <tt-search></tt-search>\n\n  </div>\n</div>\n<!--<select name=\"complexity\">\n        <option *ngFor=\"let item of complexity\" value=\"{{ item.id }}\">{{item.title}}</option>\n      </select>-->"
+module.exports = "<div class=\"row justify-content-center\">\n  <div class=\"col-10\">\n    <tt-search></tt-search>\n\n  </div>\n</div>\n<!--<select name=\"complexity\">\n        <option *ngFor=\"let item of complexity\" value=\"{{ item.id }}\">{{item.title}}</option>\n      </select>-->"
 
 /***/ }),
 
@@ -594,14 +594,14 @@ var BackendApiService = /** @class */ (function () {
     }
     Object.defineProperty(BackendApiService.prototype, "complexity", {
         get: function () {
-            return this.http.get('https://dev-api-recreationassistant.azurewebsites.net/api/Complexity');
+            return this.http.get('/api/Complexity');
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(BackendApiService.prototype, "duration", {
         get: function () {
-            return this.http.get('https://dev-api-recreationassistant.azurewebsites.net/api/Duration');
+            return this.http.get('/api/Duration');
         },
         enumerable: true,
         configurable: true
