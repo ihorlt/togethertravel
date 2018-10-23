@@ -594,14 +594,14 @@ var BackendApiService = /** @class */ (function () {
     }
     Object.defineProperty(BackendApiService.prototype, "complexity", {
         get: function () {
-            return this.http.get('/api/Complexity');
+            return this.http.get('http://dev-api-recreationassistant.azurewebsites.net/api/Complexity');
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(BackendApiService.prototype, "duration", {
         get: function () {
-            return this.http.get('/api/Duration');
+            return this.http.get('http://dev-api-recreationassistant.azurewebsites.net/api/Duration');
         },
         enumerable: true,
         configurable: true
