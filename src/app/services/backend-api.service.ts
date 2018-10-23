@@ -20,5 +20,8 @@ export class BackendApiService {
   get duration(): any {
     return this.http.get('/api/Duration');
   }
+  get location(): any {
+    return this.http.get('/api/Location');
+  }
 
 }

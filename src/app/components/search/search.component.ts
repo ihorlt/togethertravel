@@ -9,7 +9,8 @@ import { BackendApiService } from 'src/app/services/backend-api.service';
 export class SearchComponent implements OnInit {
   public complexity: any;
   public duration: any;
-  
+  public location: any;
+
   constructor(
     public backendApiService: BackendApiService
   ) {}
@@ -19,6 +20,8 @@ export class SearchComponent implements OnInit {
     .subscribe( res => this.complexity = res);
     this.backendApiService.duration
     .subscribe( res => this.duration = res);
+    this.backendApiService.location
+    .subscribe( res => this.location = res);
   }
 
 }
