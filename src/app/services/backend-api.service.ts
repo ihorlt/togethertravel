@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+const BASE_URL = 'https://dev-api-recreationassistant.azurewebsites.net/api/';
+
 /**
  * Tu use proxy
  * ng serve --proxy-config=proxy.conf.json
@@ -14,14 +16,8 @@ export class BackendApiService {
     private http: HttpClient
   ) { }
 
-  get complexity(): any {
-    return this.http.get('/api/Complexity');
-  }
-  get duration(): any {
-    return this.http.get('/api/Duration');
-  }
-  get location(): any {
-    return this.http.get('/api/Location');
+  getapi(uri): any {
+    return this.http.get(BASE_URL + uri );
   }
 
 }

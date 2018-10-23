@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from './services/translate.service';
 
 @Component({
   selector: 'tt-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'togethertravel';
+
+  constructor(
+    public tsrv: TranslateService
+  ) {
+    tsrv.lang = 'ua';
+  }
 }

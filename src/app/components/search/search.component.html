@@ -1,6 +1,5 @@
 <section class="container-fluid search">
-  <div class="row">
-    <form>
+    <form class="row">
           <div class="col-12 сol-sm-6 col-md">
               <select name="complexity" id="complexity" class="form-control form-control-lg">
                 <option value="" disabled selected>Тривалість</option>
@@ -16,12 +15,11 @@
           <div class="col-12 сol-sm-6 col-md">
             <select name="location" id="location" class="form-control form-control-lg">
               <option value="" disabled selected>Локалізація (Регіон)</option>
-              <option *ngFor="let item of location" value="{{ item.id }}">{{item.region}}</option>      
+              <option *ngFor="let item of location" value="{{ item.id }}">{{tsrv.t(item.region) | async}}</option>      
             </select>
           </div>
           <div class="col-12 сol-sm-6 col-md">
             <input type="submit" class="form-control form-control-lg btn btn-success" value="Пошук маршруту">
           </div>
     </form>
-  </div>
 </section>

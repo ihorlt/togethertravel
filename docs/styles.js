@@ -637,9 +637,9 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/html/togethertravel/src/assets/css/animate.css */"./src/assets/css/animate.css");
-__webpack_require__(/*! /var/www/html/togethertravel/src/assets/css/bootstrap.min.css */"./src/assets/css/bootstrap.min.css");
-module.exports = __webpack_require__(/*! /var/www/html/togethertravel/src/styles.css */"./src/styles.css");
+__webpack_require__(/*! /media/ihorlt/P2LIN/Projects/mykola/togethertravel/src/assets/css/animate.css */"./src/assets/css/animate.css");
+__webpack_require__(/*! /media/ihorlt/P2LIN/Projects/mykola/togethertravel/src/assets/css/bootstrap.min.css */"./src/assets/css/bootstrap.min.css");
+module.exports = __webpack_require__(/*! /media/ihorlt/P2LIN/Projects/mykola/togethertravel/src/styles.css */"./src/styles.css");
 
 
 /***/ })

@@ -101,23 +101,31 @@ module.exports = "<tt-header></tt-header>\n\n<router-outlet></router-outlet>\n\n
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_translate_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./services/translate.service */ "./src/app/services/translate.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+    function AppComponent(tsrv) {
+        this.tsrv = tsrv;
         this.title = 'togethertravel';
+        tsrv.lang = 'ua';
     }
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'tt-root',
             template: __webpack_require__(/*! ./app.component.html */ "./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
-        })
+        }),
+        __metadata("design:paramtypes", [_services_translate_service__WEBPACK_IMPORTED_MODULE_1__["TranslateService"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -338,7 +346,7 @@ module.exports = "select:invalid {\n    color: gray;\n  }\n  option[value=\"\"][
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"container-fluid search\">\n  <form class=\"row\">\n    <div class=\"col-12 col-sm-6 col-md\">\n        <select name=\"complexity\" id=\"complexity\" class=\"form-control form-control-lg\">\n          <option value=\"\" disabled selected>Складність</option>\n          <option *ngFor=\"let item of complexity\" value=\"{{ item.id }}\">{{item.title}}</option>\n        </select>\n    </div>\n    <div class=\"col-12 сol-sm-6 col-md\">\n      <select name=\"duration\" id=\"duration\" class=\"form-control form-control-lg\">\n        <option value=\"\" disabled selected>Тривалість</option>\n        <option *ngFor=\"let item of duration\" value=\"{{ item.id }}\">{{item.title}}</option>\n      </select>\n    </div>\n    <div class=\"col-12 сol-sm-6 col-md\">\n      <select name=\"duration\" id=\"duration\" class=\"form-control form-control-lg\">\n        <option value=\"\" disabled selected>Локалізація (Регіон)</option>\n        <option value=\"\">Карпати</option>\n\n      </select>\n    </div>\n    <div class=\"col-12 сol-sm-6 col-md\">\n      <input type=\"submit\" class=\"form-control form-control-lg btn btn-success\" value=\"Пошук маршруту\">\n    </div>\n  </form>\n</section>"
+module.exports = "<section class=\"container-fluid search\">\n    <form class=\"row\">\n          <div class=\"col-12 сol-sm-6 col-md\">\n              <select name=\"complexity\" id=\"complexity\" class=\"form-control form-control-lg\">\n                <option value=\"\" disabled selected>Тривалість</option>\n                <option *ngFor=\"let item of complexity\" value=\"{{ item.id }}\">{{item.title}}</option>\n              </select>\n          </div>\n          <div class=\"col-12 сol-sm-6 col-md\">\n            <select name=\"duration\" id=\"duration\" class=\"form-control form-control-lg\">\n              <option value=\"\" disabled selected>Тривалість</option>\n              <option *ngFor=\"let item of duration\" value=\"{{ item.id }}\">{{item.title}}</option>\n            </select>\n          </div>\n          <div class=\"col-12 сol-sm-6 col-md\">\n            <select name=\"location\" id=\"location\" class=\"form-control form-control-lg\">\n              <option value=\"\" disabled selected>Локалізація (Регіон)</option>\n              <option *ngFor=\"let item of location\" value=\"{{ item.id }}\">{{tsrv.t(item.region) | async}}</option>      \n            </select>\n          </div>\n          <div class=\"col-12 сol-sm-6 col-md\">\n            <input type=\"submit\" class=\"form-control form-control-lg btn btn-success\" value=\"Пошук маршруту\">\n          </div>\n    </form>\n</section>"
 
 /***/ }),
 
@@ -354,6 +362,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchComponent", function() { return SearchComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var src_app_services_backend_api_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/backend-api.service */ "./src/app/services/backend-api.service.ts");
+/* harmony import */ var src_app_services_translate_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/services/translate.service */ "./src/app/services/translate.service.ts");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -365,16 +376,33 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+
+
+
 var SearchComponent = /** @class */ (function () {
-    function SearchComponent(backendApiService) {
+    function SearchComponent(backendApiService, tsrv) {
         this.backendApiService = backendApiService;
+        this.tsrv = tsrv;
+        this.ngUnsubscribe = new rxjs__WEBPACK_IMPORTED_MODULE_4__["Subject"]();
+        this.complexity = [];
+        this.duration = [];
+        this.location = [];
     }
     SearchComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.backendApiService.complexity
+        this.backendApiService.getapi('Complexity')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.ngUnsubscribe))
             .subscribe(function (res) { return _this.complexity = res; });
-        this.backendApiService.duration
+        this.backendApiService.getapi('Duration')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.ngUnsubscribe))
             .subscribe(function (res) { return _this.duration = res; });
+        this.backendApiService.getapi('Location')
+            .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["takeUntil"])(this.ngUnsubscribe))
+            .subscribe(function (res) { return _this.location = res; });
+    };
+    SearchComponent.prototype.ngOnDestroy = function () {
+        this.ngUnsubscribe.next();
+        this.ngUnsubscribe.complete();
     };
     SearchComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -382,7 +410,8 @@ var SearchComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./search.component.html */ "./src/app/components/search/search.component.html"),
             styles: [__webpack_require__(/*! ./search.component.css */ "./src/app/components/search/search.component.css")]
         }),
-        __metadata("design:paramtypes", [src_app_services_backend_api_service__WEBPACK_IMPORTED_MODULE_1__["BackendApiService"]])
+        __metadata("design:paramtypes", [src_app_services_backend_api_service__WEBPACK_IMPORTED_MODULE_1__["BackendApiService"],
+            src_app_services_translate_service__WEBPACK_IMPORTED_MODULE_2__["TranslateService"]])
     ], SearchComponent);
     return SearchComponent;
 }());
@@ -510,7 +539,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"row justify-content-center\">\n  <div class=\"col-10\">\n    <tt-search></tt-search>\n\n  </div>\n</div>\n<!--<select name=\"complexity\">\n        <option *ngFor=\"let item of complexity\" value=\"{{ item.id }}\">{{item.title}}</option>\n      </select>-->"
+module.exports = "<div class=\"container\">\n  <div class=\"row justify-content-center\">\n    <div class=\"col-12\">\n      <tt-search></tt-search>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -525,7 +554,6 @@ module.exports = "<div class=\"row justify-content-center\">\n  <div class=\"col
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HomeComponent", function() { return HomeComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var src_app_services_backend_api_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/app/services/backend-api.service */ "./src/app/services/backend-api.service.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -536,15 +564,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
-
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent(backendApiService) {
-        this.backendApiService = backendApiService;
+    function HomeComponent() {
     }
     HomeComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.backendApiService.complexity
-            .subscribe(function (res) { return _this.complexity = res; });
     };
     HomeComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
@@ -552,7 +575,7 @@ var HomeComponent = /** @class */ (function () {
             template: __webpack_require__(/*! ./home.component.html */ "./src/app/pages/home/home.component.html"),
             styles: [__webpack_require__(/*! ./home.component.css */ "./src/app/pages/home/home.component.css")]
         }),
-        __metadata("design:paramtypes", [src_app_services_backend_api_service__WEBPACK_IMPORTED_MODULE_1__["BackendApiService"]])
+        __metadata("design:paramtypes", [])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -584,6 +607,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 
+var BASE_URL = 'https://dev-api-recreationassistant.azurewebsites.net/api/';
 /**
  * Tu use proxy
  * ng serve --proxy-config=proxy.conf.json
@@ -592,20 +616,9 @@ var BackendApiService = /** @class */ (function () {
     function BackendApiService(http) {
         this.http = http;
     }
-    Object.defineProperty(BackendApiService.prototype, "complexity", {
-        get: function () {
-            return this.http.get('https://dev-api-recreationassistant.azurewebsites.net/api/Complexity');
-        },
-        enumerable: true,
-        configurable: true
-    });
-    Object.defineProperty(BackendApiService.prototype, "duration", {
-        get: function () {
-            return this.http.get('https://dev-api-recreationassistant.azurewebsites.net/api/Duration');
-        },
-        enumerable: true,
-        configurable: true
-    });
+    BackendApiService.prototype.getapi = function (uri) {
+        return this.http.get(BASE_URL + uri);
+    };
     BackendApiService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
             providedIn: 'root'
@@ -613,6 +626,67 @@ var BackendApiService = /** @class */ (function () {
         __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
     ], BackendApiService);
     return BackendApiService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/services/translate.service.ts":
+/*!***********************************************!*\
+  !*** ./src/app/services/translate.service.ts ***!
+  \***********************************************/
+/*! exports provided: TranslateService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TranslateService", function() { return TranslateService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var BASE_URL = 'assets/lang/';
+/**
+ * Use a file for translate from English keys to any other lang
+ */
+var TranslateService = /** @class */ (function () {
+    function TranslateService(http) {
+        this.http = http;
+        this._file$ = new rxjs__WEBPACK_IMPORTED_MODULE_2__["ReplaySubject"](1);
+    }
+    TranslateService.prototype.t = function (key) {
+        return this._file$.pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_3__["map"])(function (res) { return res[key.toLowerCase().trim()]; }));
+    };
+    Object.defineProperty(TranslateService.prototype, "lang", {
+        set: function (lang) {
+            var _this = this;
+            this.http.get(BASE_URL + lang + '.json')
+                .subscribe(function (res) { return _this._file$.next(res); });
+        },
+        enumerable: true,
+        configurable: true
+    });
+    TranslateService = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])({
+            providedIn: 'root'
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]])
+    ], TranslateService);
+    return TranslateService;
 }());
 
 
@@ -680,7 +754,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /var/www/html/togethertravel/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /media/ihorlt/P2LIN/Projects/mykola/togethertravel/src/main.ts */"./src/main.ts");
 
 
 /***/ })
