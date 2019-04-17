@@ -86,7 +86,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<tt-header></tt-header>\n\n<router-outlet></router-outlet>\n\n<tt-footer></tt-footer>"
+module.exports = "<tt-header></tt-header>\r\n\r\n<router-outlet></router-outlet>\r\n\r\n<tt-footer></tt-footer>"
 
 /***/ }),
 
@@ -209,7 +209,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".footer {\n    position: fixed;\n    bottom: 0;\n    width: 100%;\n    height: 60px;\n    line-height: 60px;\n    background-color: #f5f5f5;\n}\nfooter {\n    display: block;\n    opacity: 0.8;\n}\n.text-muted {\n    color: #6c757d !important;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7SUFDaEIsVUFBVTtJQUNWLFlBQVk7SUFDWixhQUFhO0lBQ2Isa0JBQWtCO0lBQ2xCLDBCQUEwQjtDQUM3QjtBQUNEO0lBQ0ksZUFBZTtJQUNmLGFBQWE7Q0FDaEI7QUFDRDtJQUNJLDBCQUEwQjtDQUM3QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvb3RlciB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIGJvdHRvbTogMDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBoZWlnaHQ6IDYwcHg7XG4gICAgbGluZS1oZWlnaHQ6IDYwcHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2Y1ZjVmNTtcbn1cbmZvb3RlciB7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgb3BhY2l0eTogMC44O1xufVxuLnRleHQtbXV0ZWQge1xuICAgIGNvbG9yOiAjNmM3NTdkICFpbXBvcnRhbnQ7XG59Il19 */"
+module.exports = ".footer {\r\n    position: fixed;\r\n    bottom: 0;\r\n    width: 100%;\r\n    height: 60px;\r\n    line-height: 60px;\r\n    background-color: #f5f5f5;\r\n}\r\nfooter {\r\n    display: block;\r\n    opacity: 0.8;\r\n}\r\n.text-muted {\r\n    color: #6c757d !important;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9mb290ZXIvZm9vdGVyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxlQUFlO0lBQ2YsU0FBUztJQUNULFdBQVc7SUFDWCxZQUFZO0lBQ1osaUJBQWlCO0lBQ2pCLHlCQUF5QjtBQUM3QjtBQUNBO0lBQ0ksY0FBYztJQUNkLFlBQVk7QUFDaEI7QUFDQTtJQUNJLHlCQUF5QjtBQUM3QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudHMvZm9vdGVyL2Zvb3Rlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvb3RlciB7XHJcbiAgICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgICBib3R0b206IDA7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogNjBweDtcclxuICAgIGxpbmUtaGVpZ2h0OiA2MHB4O1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2Y1ZjVmNTtcclxufVxyXG5mb290ZXIge1xyXG4gICAgZGlzcGxheTogYmxvY2s7XHJcbiAgICBvcGFjaXR5OiAwLjg7XHJcbn1cclxuLnRleHQtbXV0ZWQge1xyXG4gICAgY29sb3I6ICM2Yzc1N2QgIWltcG9ydGFudDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -220,7 +220,7 @@ module.exports = ".footer {\n    position: fixed;\n    bottom: 0;\n    width: 10
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"footer\">\n    <div align=center class=\"container\">\n      <span class=\"text-muted\">@ Together Travel, 2018</span>\n    </div>\n  </footer>"
+module.exports = "<footer class=\"footer\">\r\n    <div align=center class=\"container\">\r\n      <span class=\"text-muted\">@ Together Travel, 2018</span>\r\n    </div>\r\n  </footer>"
 
 /***/ }),
 
@@ -283,7 +283,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  header works!\n</p>\n"
+module.exports = "<p>\r\n  header works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -335,7 +335,7 @@ var HeaderComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "select:invalid {\n    color: gray;\n  }\n  option[value=\"\"][disabled] {\n    display: none;\n  }\n  .form-select{\n    display: block;\n    width: 100%;  \n    height: calc(3.5rem + 2px);    \n    padding: .375rem .75rem;   \n    font-size: 1.5rem;    \n    line-height: 2;\n  }\n  .form-submit{\n    display: block;\n    width: 100%;  \n    height: calc(3.5rem + 2px);    \n    padding: 0.25rem .25rem .75rem;   \n    font-size: 1.5rem;    \n    line-height: 2;\n  }\n  .search{\n    padding:1rem;\n    background-color: blanchedalmond;\n    opacity: .9;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zZWFyY2gvc2VhcmNoLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxZQUFZO0dBQ2I7RUFDRDtJQUNFLGNBQWM7R0FDZjtFQUNEO0lBQ0UsZUFBZTtJQUNmLFlBQVk7SUFDWiwyQkFBMkI7SUFDM0Isd0JBQXdCO0lBQ3hCLGtCQUFrQjtJQUNsQixlQUFlO0dBQ2hCO0VBQ0Q7SUFDRSxlQUFlO0lBQ2YsWUFBWTtJQUNaLDJCQUEyQjtJQUMzQiwrQkFBK0I7SUFDL0Isa0JBQWtCO0lBQ2xCLGVBQWU7R0FDaEI7RUFDRDtJQUNFLGFBQWE7SUFDYixpQ0FBaUM7SUFDakMsWUFBWTtHQUNiIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9zZWFyY2gvc2VhcmNoLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJzZWxlY3Q6aW52YWxpZCB7XG4gICAgY29sb3I6IGdyYXk7XG4gIH1cbiAgb3B0aW9uW3ZhbHVlPVwiXCJdW2Rpc2FibGVkXSB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxuICAuZm9ybS1zZWxlY3R7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgd2lkdGg6IDEwMCU7ICBcbiAgICBoZWlnaHQ6IGNhbGMoMy41cmVtICsgMnB4KTsgICAgXG4gICAgcGFkZGluZzogLjM3NXJlbSAuNzVyZW07ICAgXG4gICAgZm9udC1zaXplOiAxLjVyZW07ICAgIFxuICAgIGxpbmUtaGVpZ2h0OiAyO1xuICB9XG4gIC5mb3JtLXN1Ym1pdHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICB3aWR0aDogMTAwJTsgIFxuICAgIGhlaWdodDogY2FsYygzLjVyZW0gKyAycHgpOyAgICBcbiAgICBwYWRkaW5nOiAwLjI1cmVtIC4yNXJlbSAuNzVyZW07ICAgXG4gICAgZm9udC1zaXplOiAxLjVyZW07ICAgIFxuICAgIGxpbmUtaGVpZ2h0OiAyO1xuICB9XG4gIC5zZWFyY2h7XG4gICAgcGFkZGluZzoxcmVtO1xuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYW5jaGVkYWxtb25kO1xuICAgIG9wYWNpdHk6IC45O1xuICB9Il19 */"
+module.exports = "select:invalid {\r\n    color: gray;\r\n  }\r\n  option[value=\"\"][disabled] {\r\n    display: none;\r\n  }\r\n  .form-select{\r\n    display: block;\r\n    width: 100%;  \r\n    height: calc(3.5rem + 2px);    \r\n    padding: .375rem .75rem;   \r\n    font-size: 1.5rem;    \r\n    line-height: 2;\r\n  }\r\n  .form-submit{\r\n    display: block;\r\n    width: 100%;  \r\n    height: calc(3.5rem + 2px);    \r\n    padding: 0.25rem .25rem .75rem;   \r\n    font-size: 1.5rem;    \r\n    line-height: 2;\r\n  }\r\n  .search{\r\n    padding:1rem;\r\n    background-color: blanchedalmond;\r\n    opacity: .9;\r\n  }\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50cy9zZWFyY2gvc2VhcmNoLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxXQUFXO0VBQ2I7RUFDQTtJQUNFLGFBQWE7RUFDZjtFQUNBO0lBQ0UsY0FBYztJQUNkLFdBQVc7SUFDWCwwQkFBMEI7SUFDMUIsdUJBQXVCO0lBQ3ZCLGlCQUFpQjtJQUNqQixjQUFjO0VBQ2hCO0VBQ0E7SUFDRSxjQUFjO0lBQ2QsV0FBVztJQUNYLDBCQUEwQjtJQUMxQiw4QkFBOEI7SUFDOUIsaUJBQWlCO0lBQ2pCLGNBQWM7RUFDaEI7RUFDQTtJQUNFLFlBQVk7SUFDWixnQ0FBZ0M7SUFDaEMsV0FBVztFQUNiIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50cy9zZWFyY2gvc2VhcmNoLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJzZWxlY3Q6aW52YWxpZCB7XHJcbiAgICBjb2xvcjogZ3JheTtcclxuICB9XHJcbiAgb3B0aW9uW3ZhbHVlPVwiXCJdW2Rpc2FibGVkXSB7XHJcbiAgICBkaXNwbGF5OiBub25lO1xyXG4gIH1cclxuICAuZm9ybS1zZWxlY3R7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIHdpZHRoOiAxMDAlOyAgXHJcbiAgICBoZWlnaHQ6IGNhbGMoMy41cmVtICsgMnB4KTsgICAgXHJcbiAgICBwYWRkaW5nOiAuMzc1cmVtIC43NXJlbTsgICBcclxuICAgIGZvbnQtc2l6ZTogMS41cmVtOyAgICBcclxuICAgIGxpbmUtaGVpZ2h0OiAyO1xyXG4gIH1cclxuICAuZm9ybS1zdWJtaXR7XHJcbiAgICBkaXNwbGF5OiBibG9jaztcclxuICAgIHdpZHRoOiAxMDAlOyAgXHJcbiAgICBoZWlnaHQ6IGNhbGMoMy41cmVtICsgMnB4KTsgICAgXHJcbiAgICBwYWRkaW5nOiAwLjI1cmVtIC4yNXJlbSAuNzVyZW07ICAgXHJcbiAgICBmb250LXNpemU6IDEuNXJlbTsgICAgXHJcbiAgICBsaW5lLWhlaWdodDogMjtcclxuICB9XHJcbiAgLnNlYXJjaHtcclxuICAgIHBhZGRpbmc6MXJlbTtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGJsYW5jaGVkYWxtb25kO1xyXG4gICAgb3BhY2l0eTogLjk7XHJcbiAgfSJdfQ== */"
 
 /***/ }),
 
@@ -346,7 +346,7 @@ module.exports = "select:invalid {\n    color: gray;\n  }\n  option[value=\"\"][
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"container-fluid search\">\n    <form class=\"row\">\n          <div class=\"col-12 сol-sm-6 col-md\">\n              <select name=\"complexity\" id=\"complexity\" class=\"form-control form-control-lg\">\n                <option value=\"\" disabled selected>Тривалість</option>\n                <option *ngFor=\"let item of complexity\" value=\"{{ item.id }}\">{{item.title}}</option>\n              </select>\n          </div>\n          <div class=\"col-12 сol-sm-6 col-md\">\n            <select name=\"duration\" id=\"duration\" class=\"form-control form-control-lg\">\n              <option value=\"\" disabled selected>Тривалість</option>\n              <option *ngFor=\"let item of duration\" value=\"{{ item.id }}\">{{item.title}}</option>\n            </select>\n          </div>\n          <div class=\"col-12 сol-sm-6 col-md\">\n            <select name=\"location\" id=\"location\" class=\"form-control form-control-lg\">\n              <option value=\"\" disabled selected>Локалізація (Регіон)</option>\n              <option *ngFor=\"let item of location\" value=\"{{ item.id }}\">{{tsrv.t(item.region) | async}}</option>      \n            </select>\n          </div>\n          <div class=\"col-12 сol-sm-6 col-md\">\n            <input type=\"submit\" class=\"form-control form-control-lg btn btn-success\" value=\"Пошук маршруту\">\n          </div>\n    </form>\n</section>"
+module.exports = "<section class=\"container-fluid search\">\r\n    <form class=\"row\">\r\n          <div class=\"col-12 сol-sm-6 col-md\">\r\n              <select name=\"complexity\" id=\"complexity\" class=\"form-control form-control-lg\">\r\n                <option value=\"\" disabled selected>Тривалість</option>\r\n                <option *ngFor=\"let item of complexity\" value=\"{{ item.id }}\">{{item.title}}</option>\r\n              </select>\r\n          </div>\r\n          <div class=\"col-12 сol-sm-6 col-md\">\r\n            <select name=\"duration\" id=\"duration\" class=\"form-control form-control-lg\">\r\n              <option value=\"\" disabled selected>Тривалість</option>\r\n              <option *ngFor=\"let item of duration\" value=\"{{ item.id }}\">{{item.title}}</option>\r\n            </select>\r\n          </div>\r\n          <div class=\"col-12 сol-sm-6 col-md\">\r\n            <select name=\"location\" id=\"location\" class=\"form-control form-control-lg\">\r\n              <option value=\"\" disabled selected>Локалізація (Регіон)</option>\r\n              <option *ngFor=\"let item of location\" value=\"{{ item.id }}\">{{tsrv.t(item.region) | async}}</option>      \r\n            </select>\r\n          </div>\r\n          <div class=\"col-12 сol-sm-6 col-md\">\r\n            <input type=\"submit\" class=\"form-control form-control-lg btn btn-success\" value=\"Пошук маршруту\">\r\n          </div>\r\n    </form>\r\n</section>"
 
 /***/ }),
 
@@ -476,7 +476,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  about works!\n</p>\n"
+module.exports = "<p>\r\n  about works!\r\n</p>\r\n"
 
 /***/ }),
 
@@ -539,7 +539,7 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row justify-content-center\">\n    <div class=\"col-12\">\n      <tt-search></tt-search>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row justify-content-center\">\r\n    <div class=\"col-12\">\r\n      <tt-search></tt-search>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -754,7 +754,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /media/ihorlt/P2LIN/Projects/mykola/togethertravel/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Ad1\Documents\togethertravel\src\main.ts */"./src/main.ts");
 
 
 /***/ })
