@@ -1,0 +1,37 @@
+<tt-search></tt-search>
+
+
+<ul [ngClass]="'tt-routes-list-container'">
+    <li *ngFor="let route of routes">
+        <div [ngClass]="'tt-route-card-container'">
+            <div class="row">
+                <div class="col-lg-3 col-sm-3">
+                    <div>
+                        <img *ngIf="route.digitalAssets.length" src="{{route.digitalAssets[0].link}}">
+                    </div>
+                </div>
+                <div class="col-lg-9 col-sm-9 details" >
+                    <div class="row title">
+                        {{route.name}}
+                    </div>
+                    <div class="row">
+                        Тривалість: {{route.duration.title}}
+                    </div>
+                    <div class="row">
+                        {{route.startLocation.name}} - {{route.endLocation.name}}
+                    </div>
+                    <div class="row button-container">
+                        <div class="">
+                            <button title="Поділитись" class="btn btn-link"  >
+                                <img class="icon" src="/assets/icons/share.svg">    
+                            </button>
+                            <button title="Переглянути" class="btn btn-link">
+                                <img class="icon" src="/assets/icons/open.svg">    
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>

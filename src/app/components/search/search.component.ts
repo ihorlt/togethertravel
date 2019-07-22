@@ -3,40 +3,50 @@ import { BackendApiService } from 'src/app/services/backend-api.service';
 import { TranslateService } from 'src/app/services/translate.service';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
+import { Validators, FormBuilder, FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'tt-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+    selector: 'tt-search',
+    templateUrl: './search.component.html',
+    styleUrls: ['./search.component.css']
 })
 export class SearchComponent implements OnInit, OnDestroy {
 
-  private ngUnsubscribe = new Subject();
+    private ngUnsubscribe = new Subject();
 
-  public complexity: any[] = [];
-  public duration: any[] = [];
-  public location: any[] = [];
+    public complexity: any[] = [];
+    public duration: any[] = [];
+    public location: any[] = [];
+    public routeFilter: FormGroup;
+    public model: any = {};
 
-  constructor(
-    public backendApiService: BackendApiService,
-    public tsrv: TranslateService
-  ) {}
+    constructor(
+        public backendApiService: BackendApiService,
+        public tsrv: TranslateService
+    ) {
+    }
 
-  ngOnInit() {
-    this.backendApiService.getapi('Complexity')
-    .pipe(takeUntil(this.ngUnsubscribe))
-    .subscribe( res => this.complexity = res);
-    this.backendApiService.getapi('Duration')
-    .pipe(takeUntil(this.ngUnsubscribe))
-    .subscribe( res => this.duration = res);
-    this.backendApiService.getapi('Location')
-    .pipe(takeUntil(this.ngUnsubscribe))
-    .subscribe( res => this.location = res);
-  }
+    ngOnInit() {
+        this.backendApiService.getapi('Complexity')
+            .pipe(takeUntil(this.ngUnsubscribe))
+            .subscribe(res => this.complexity = res);
 
-  ngOnDestroy() {
-    this.ngUnsubscribe.next();
-    this.ngUnsubscribe.complete();
-}
+        this.backendApiService.getapi('Duration')
+            .pipe(takeUntil(this.ngUnsubscribe))
+            .subscribe(res => this.duration = res);
 
+        this.backendApiService.getapi('Location')
+            .pipe(takeUntil(this.ngUnsubscribe))
+            .subscribe(res => this.location = res);
+    }
+
+    ngOnDestroy() {
+        this.ngUnsubscribe.next();
+        this.ngUnsubscribe.complete();
+    }
+
+    search() {
+        
+        console.log(JSON.stringify(this.model));
+    }
 }
